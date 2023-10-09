@@ -1,0 +1,29 @@
+{
+  "name": "video-chat-webapp",
+  "version": "1.0.0",
+  "description": "Video Chat webapp",
+  "main": "server.js",
+  "scripts": {
+    "nodemon": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHUBHANSHU-creator/Video-Chat-WebApp.git"
+  },
+  "keywords": [
+    "WEBRTC"
+  ],
+  "author": "Shubhanshu Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHUBHANSHU-creator/Video-Chat-WebApp/issues"
+  },
+  "homepage": "https://github.com/SHUBHANSHU-creator/Video-Chat-WebApp#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
+  }
+}
