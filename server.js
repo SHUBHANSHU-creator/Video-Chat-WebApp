@@ -16,9 +16,14 @@ app.get('/:room', (req,res) =>{
     res.render('room',{roomId: req.params.room})
 })
 
+io.on('connection', socket => {
+    socket.on('join-room',(roomId,userId) => {
+        // console.log(roomId,userId);
+        socket.join(roomId)
+        socket.to(roomId).emit('user-connected',userId)
+    })
+})
 
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
-  
+
+server.listen(3000);
